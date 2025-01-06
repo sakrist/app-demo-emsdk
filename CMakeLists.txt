@@ -7,15 +7,16 @@ project(app-demo DESCRIPTION "Demo project for app")
 set(CMAKE_CXX_STANDARD 17)
 
 
-set(SOURCES src/main.cpp)
+set(SOURCES src/main_webgl.cpp)
 
 if (EMSCRIPTEN)
     set(CMAKE_EXECUTABLE_SUFFIX ".html")
-    set(EMSCRIPTEN_FLAGS " -s USE_WEBGL2=1 \
-    -s FULL_ES3=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 \
+    set(EMSCRIPTEN_FLAGS " -s USE_WEBGL2=1 -s FULL_ES3=1 \
+    -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 \
     -s SAFE_HEAP=1  -s DISABLE_EXCEPTION_CATCHING=0 \
     -s FORCE_FILESYSTEM=1 --bind  --emrun \
     -lidbfs.js --shell-file ${CMAKE_SOURCE_DIR}/app-demo.html")
+    # --pre-js ${CMAKE_SOURCE_DIR}/src/pre.js ")
 endif()
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")

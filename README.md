@@ -23,7 +23,7 @@ emcmake cmake ..
 
 3. Build the project:
 ```bash
-emmake make
+cmake --build .
 ```
 
 ## Running the Application
