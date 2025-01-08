@@ -40,7 +40,8 @@ Or serve the files using any web server. The following files are needed:
 
 ## Project Structure
 
-- `src/main.cpp` - Main application code with WebGL setup and rendering
+- `src/main_webgl.cpp` - Main application code with WebGL setup and rendering
+- `src/main_webgpu.cpp` - Main application code with WebGPU setup and rendering
 - `src/app-demo.html` - HTML template for the application
 - `CMakeLists.txt` - CMake build configuration
 
