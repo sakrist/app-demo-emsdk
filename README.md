@@ -51,3 +51,8 @@ This demo creates a WebGL context and renders a simple red triangle using WebAss
 - Basic shader setup
 - Vertex buffer creation and rendering
 - Main loop implementation for web
+
+
+## References 
+ * https://github.com/jspdown/webgpu-starter
+ * https://developer.chrome.com/docs/web-platform/webgpu/build-app
