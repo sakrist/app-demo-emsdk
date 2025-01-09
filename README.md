@@ -18,7 +18,7 @@ cd build
 
 2. Configure with CMake:
 ```bash
-emcmake cmake ..
+emcmake cmake .. -DCMAKE_BUILD_TYPE=Debug
 ```
 
 3. Build the project:
@@ -57,3 +57,4 @@ This demo creates a WebGL context and renders a simple red triangle using WebAss
 ## References 
  * https://github.com/jspdown/webgpu-starter
  * https://developer.chrome.com/docs/web-platform/webgpu/build-app
+ * https://github.com/eliemichel/LearnWebGPU-Code/tree/step010
